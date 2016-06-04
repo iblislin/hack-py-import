@@ -18,3 +18,16 @@ We provide following psedo module for you:
 	Successfully installed requests-2.10.0
 	>>> requests
 	<module 'requests' from '/usr/home/iblis/venv/universe/lib/python3.6/site-packages/requests/__init__.py'>
+
+- ``c``: import c lib via ``cffi`` (maybe work)
+
+.. code-block:: python
+
+    >>> from functools import partial
+    >>> from c import stdio
+    Requirement already satisfied (use --upgrade to upgrade): cffi in /usr/home/iblis/venv/universe/lib/python3.6/site-packages
+    Requirement already satisfied (use --upgrade to upgrade): pycparser in /usr/home/iblis/venv/universe/lib/python3.6/site-packages (from cffi)
+    >>> cint = partial(stdio.ffi.cast, 'int')
+    >>> stdio.printf(b'Hello PyCon %d!\n', cint(2016))
+    Hello PyCon 2016!
+    18
