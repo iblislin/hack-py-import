@@ -44,7 +44,7 @@ class CFFIMetaPathFinder(MetaPathFinder):
         input_ = header_src
         clang = subprocess.Popen(
             clang_cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
-            )
+            stderr=subprocess.DEVNULL)
         output, _ = clang.communicate(input=input_)
 
         if clang.returncode != 0:
