@@ -19,7 +19,8 @@ We provide following psedo module for you:
 	>>> requests
 	<module 'requests' from '/usr/home/iblis/venv/universe/lib/python3.6/site-packages/requests/__init__.py'>
 
-- ``c``: import c lib via ``cffi`` (maybe work)
+- ``c``: import c lib via ``cffi`` (maybe work).
+  Only tested with clang on FreeBSD 10.1.
 
 .. code-block:: python
 
