@@ -5,6 +5,8 @@ from importlib.abc import MetaPathFinder
 
 from pip import main as pip
 
+__all__ = []
+
 
 class PyPIMetaPathFinder(MetaPathFinder):
     def __init__(self, *args, **kwargs):
@@ -12,7 +14,7 @@ class PyPIMetaPathFinder(MetaPathFinder):
         self.path_finder = PathFinder()
 
     def find_spec(self, fullname, path, target=None):
-        if not fullname.startswith('pypi'):
+        if not fullname.startswith('pypi.'):
             return
 
         mod_name = fullname.rpartition('pypi.')[-1]

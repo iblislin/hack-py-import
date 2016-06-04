@@ -2,6 +2,7 @@ Hack Your Python Importer
 ===============================================================================
 
 This repo is a proof of concept to show you python's powerful import system.
+Only python 3.6 tested.
 
 We provide following psedo module for you:
 
