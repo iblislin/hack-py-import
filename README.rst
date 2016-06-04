@@ -26,9 +26,17 @@ We provide following psedo module for you:
 
     >>> from functools import partial
     >>> from c import stdio
-    Requirement already satisfied (use --upgrade to upgrade): cffi in /usr/home/iblis/venv/universe/lib/python3.6/site-packages
-    Requirement already satisfied (use --upgrade to upgrade): pycparser in /usr/home/iblis/venv/universe/lib/python3.6/site-packages (from cffi)
+	Collecting cffi
+	Downloading cffi-1.6.0.tar.gz (397kB)
+		100% |████████████████████████████████| 399kB 2.0MB/s
+	Collecting pycparser (from cffi)
+	Downloading pycparser-2.14.tar.gz (223kB)
+		100% |████████████████████████████████| 225kB 6.4MB/s
+	Installing collected packages: pycparser, cffi
+	Running setup.py install for pycparser ... done
+	Running setup.py install for cffi ... done
+	Successfully installed cffi-1.6.0 pycparser-2.14
     >>> cint = partial(stdio.ffi.cast, 'int')
-    >>> stdio.printf(b'Hello PyCon %d!\n', cint(2016))
-    Hello PyCon 2016!
+    >>> stdio.printf(b'Hello PyCon TW %d!\n', cint(2016))
+    Hello PyCon TW 2016!
     18
