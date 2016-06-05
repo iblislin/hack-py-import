@@ -34,16 +34,16 @@ Only tested with clang on FreeBSD 10.1.
 
     >>> from functools import partial
     >>> from c import stdio
-	Collecting cffi
-	Downloading cffi-1.6.0.tar.gz (397kB)
-		100% |████████████████████████████████| 399kB 2.0MB/s
-	Collecting pycparser (from cffi)
-	Downloading pycparser-2.14.tar.gz (223kB)
-		100% |████████████████████████████████| 225kB 6.4MB/s
-	Installing collected packages: pycparser, cffi
-	Running setup.py install for pycparser ... done
-	Running setup.py install for cffi ... done
-	Successfully installed cffi-1.6.0 pycparser-2.14
+    Collecting cffi
+    Downloading cffi-1.6.0.tar.gz (397kB)
+        100% |████████████████████████████████| 399kB 2.0MB/s
+    Collecting pycparser (from cffi)
+    Downloading pycparser-2.14.tar.gz (223kB)
+        100% |████████████████████████████████| 225kB 6.4MB/s
+    Installing collected packages: pycparser, cffi
+    Running setup.py install for pycparser ... done
+    Running setup.py install for cffi ... done
+    Successfully installed cffi-1.6.0 pycparser-2.14
     >>> cint = partial(stdio.ffi.cast, 'int')
     >>> stdio.printf(b'Hello PyCon TW %d!\n', cint(2016))
     Hello PyCon TW 2016!
