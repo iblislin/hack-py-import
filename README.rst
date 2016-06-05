@@ -47,7 +47,7 @@ Only tested with clang on FreeBSD 10.1.
     >>> cint = partial(stdio.ffi.cast, 'int')
     >>> stdio.printf(b'Hello PyCon TW %d!\n', cint(2016))
     Hello PyCon TW 2016!
-    18
+    20
 
 
 Hey, I got some wierd idea!
