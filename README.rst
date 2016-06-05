@@ -5,8 +5,12 @@ This repo is a proof of concept to show you python's powerful import system.
 Only python 3.6 tested.
 
 We provide following psedo module for you:
+- ``pypi``
+- ``c``
 
-- ``pypi``: import anything from the cheese shop
+
+``pypi``: import anything from the cheese shop
+----------------------------------------------------------------------
 
 .. code-block:: python
 
@@ -19,8 +23,11 @@ We provide following psedo module for you:
 	>>> requests
 	<module 'requests' from '/usr/home/iblis/venv/universe/lib/python3.6/site-packages/requests/__init__.py'>
 
-- ``c``: import c lib via ``cffi`` (maybe work).
-  Only tested with clang on FreeBSD 10.1.
+
+``c``: import c lib via ``cffi`` (maybe work).
+----------------------------------------------------------------------
+
+Only tested with clang on FreeBSD 10.1.
 
 .. code-block:: python
 
@@ -40,3 +47,10 @@ We provide following psedo module for you:
     >>> stdio.printf(b'Hello PyCon TW %d!\n', cint(2016))
     Hello PyCon TW 2016!
     18
+
+
+Hey, I got some wierd idea!
+----------------------------------------------------------------------
+
+Feel free to open issue and disscuss with folks!
+We just like hacking!
